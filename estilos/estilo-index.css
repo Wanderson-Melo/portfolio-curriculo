@@ -8,7 +8,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(243,243,243);
     font-size: 13pt;
-    margin: 20px;
+    /*margin: 20px;*/
 }
 .main-header{
     display: flex;
@@ -50,4 +50,28 @@ li{
 footer{
     margin: 30px 10px 0px 10px;
     font-size: 11pt;
+}
+@media(max-width:600px)
+{
+    .main-header img{
+        width: 150px;
+    }
+}
+@media(min-width:950px){
+    body{
+        width: 95%;
+        margin: auto;
+    }
+}
+@media(max-width:450px){
+    .main-header{
+        flex-direction: column;
+    }
+    .main-header img{
+        width: 100px;
+        margin-left: 0px;
+    }
+    .main-header h1{
+        font-size: 20pt;
+    }
 }
