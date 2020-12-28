@@ -21,11 +21,29 @@ body{
     margin-left: 50px;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0,0,0,1);
-    transition: 1s;
+    transition: box-shadow 1s;
 }
 .main-header img:hover{
     box-shadow: none;
-    box-shadow: none;
+}
+.main-header h1{
+    color: #333d60;
+    font-weight: bolder;
+    /*Parametros para animação*/
+    animation-duration: 5s;
+    animation-name: corFonte;
+    animation-iteration-count: infinite;
+    vertical-align: middle;
+}
+.main-header span{
+    font-family: 'Courier New', Courier, monospace;
+    vertical-align: middle;
+}
+@keyframes corFonte{
+    0%,100%{color: #333d60;}
+    33%{color: #ffeda3;}
+    66%{color: #5b7873;}
+    50%{text-shadow: 0px 0px 15px #000000;}
 }
 p{
     text-indent: 15px;
@@ -36,7 +54,7 @@ p{
     border: 1px solid;
     margin: 25px;
     padding: 15px;
-    transition: .5s;
+    transition: background-color .5s;
     box-shadow: 2px 2px 5px rgba(0,0,0,1);
 }
 #main-list:hover{
@@ -88,11 +106,12 @@ footer{
     margin: 0 10px;
     padding: 20px 0px;
     font-size: 11pt;
+    line-height: 23pt;
 }
 footer a{
     text-decoration: none;
     color: black;
-    padding: 3px 6px;
+    padding: 4px 6px;
     border-radius: 5px;
     transition: .2s;
     background-color: rgba(0,0,0,.1);
