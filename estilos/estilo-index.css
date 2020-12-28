@@ -15,10 +15,17 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom: 25px;
+    margin-top: 1em;
 }
 .main-header img{
     margin-left: 50px;
     border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0,0,0,1);
+    transition: 1s;
+}
+.main-header img:hover{
+    box-shadow: none;
+    box-shadow: none;
 }
 p{
     text-indent: 15px;
@@ -29,6 +36,35 @@ p{
     border: 1px solid;
     margin: 25px;
     padding: 15px;
+    transition: .5s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,1);
+}
+#main-list:hover{
+    background-color: rgba(0,0,0,.1);
+    box-shadow: none;
+}
+#main-list a{
+    text-decoration: none;
+    color: black;
+    padding: 3px 6px;
+    border-radius: 5px;
+    transition: .5s;
+    background-color: rgba(0,0,0,.1);
+    line-height: 23pt;
+}
+#main-list a:hover{
+    padding: 6px 12px;
+    font-weight: bold;
+}
+#main-list:hover a{
+    background-color: rgb(243,243,243);
+    box-shadow: 2px 2px 5px rgba(0,0,0,1);
+}
+#main-list span{
+    /* font-weight: bold;*/
+    color: red;
+    /*font-style: italic;*/
+    font-family: 'Courier New', Courier, monospace;
 }
 header{
     margin-bottom: 25px;
@@ -47,10 +83,24 @@ li{
     padding: 2px;
     margin-left: 40px;
 }
+/*Formatações para Footer*/
 footer{
-    margin: 30px 10px 0px 10px;
+    margin: 0 10px;
+    padding: 20px 0px;
     font-size: 11pt;
 }
+footer a{
+    text-decoration: none;
+    color: black;
+    padding: 3px 6px;
+    border-radius: 5px;
+    transition: .2s;
+    background-color: rgba(0,0,0,.1);
+}
+footer:hover a{
+    box-shadow: 2px 2px 5px rgba(0,0,0,1);
+}
+/*Formatações para Responsividade*/
 @media(max-width:600px)
 {
     .main-header img{
