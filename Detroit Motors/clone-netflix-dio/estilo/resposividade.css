@@ -1,0 +1,25 @@
+@media screen and (max-width:700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+    .contatos{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contatos-redes{
+        margin-top: 3px;
+    }
+}
+@media screen and (min-width:1000px){
+    .descricao{
+        width: 50%;
+    }
+    .filme-principal{
+        height: 500px;
+    }
+}
