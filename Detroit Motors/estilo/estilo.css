@@ -56,15 +56,29 @@ header .logo{
     height: 100%;
 }
 header nav a{
+
+    font-size: 13pt;
     text-decoration: none;
     color: #AAA;
     margin-right: 10px;
+    padding: 0 5px;
+
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+
 }
 header nav a:hover{
     color: #fff;
 }
 header nav{
+
+    display: block;
+    float: right;
+    margin-top: -190px;
+
     display: none;
+
 }
 
 /*filme principal*/
@@ -126,6 +140,31 @@ header nav{
     height: 500px;
     margin: 0;
 }
+
+/*Classe para TODOS TÍTUOS*/
+.titulos{
+    color: #cd1b2e;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+/*Div CONTATOS*/
+.icones{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.icones img{
+    height: 50px;
+    margin: 10px;
+}
+.map iframe{
+    text-align: center;
+    margin: 10px;
+    width: 100%;
+}
+
+
 .servicos{
     display: flex;
     justify-content: space-around;
@@ -156,9 +195,27 @@ header nav{
     height: 800px;
     color: #cd1b2e;
     text-align: center;
+
+    width: 900px;
+    margin: auto;
 }
 p{
     color: #ffffff;
+    line-height: 20pt;
+    font-size: 15pt;
+    text-align: justify;
+    text-indent: 20px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-family: ;
+}
+p span{
+    border-bottom: 1px solid;
+
+}
+p{
+    color: #ffffff;
+
 }
 footer{
     height: 50px;
@@ -172,4 +229,19 @@ footer{
     .servicos div{
         margin: 1rem 0;
     }
+
+    .sobreNos{
+        width: 90%;
+    }
+    header nav{
+        display: none;
+    }
+    .container{
+        height: 150px;
+    }
+    .map iframe{
+        width: 100%;
+    }
+
+
 }
