@@ -88,7 +88,6 @@ header nav{
 .filme-principal{
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url("../img/capa-house.jpg");
-    height: 400px;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -158,10 +157,8 @@ header nav{
 .map iframe{
     text-align: center;
     margin: 10px;
-    width: 100%;
+    width: 95%;
 }
-
-
 .servicos{
     display: flex;
     justify-content: space-around;
@@ -189,7 +186,6 @@ header nav{
     background-color: #606060;
 }
 .sobreNos{
-    height: 800px;
     color: #cd1b2e;
     text-align: center;
 
@@ -207,11 +203,9 @@ p{
 }
 p span{
     border-bottom: 1px solid;
-
 }
 p{
     color: #ffffff;
-
 }
 footer{
     height: 50px;
@@ -221,6 +215,8 @@ footer{
     .servicos{
         flex-direction: column;
         align-items: center;
+        padding-top: 0;
+        margin-top: -1rem;
     }
     .servicos div{
         margin: 1rem 0;
@@ -235,6 +231,10 @@ footer{
         height: 150px;
     }
     .map iframe{
-        width: 100%;
+        width: 95%;
+    }
+    p{
+        font-size: 13pt;
+        line-height: 16pt;
     }
 }
