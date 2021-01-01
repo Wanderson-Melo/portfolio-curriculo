@@ -56,19 +56,29 @@ header .logo{
     height: 100%;
 }
 header nav a{
+
     font-size: 13pt;
     text-decoration: none;
     color: #AAA;
     margin-right: 10px;
     padding: 0 5px;
+
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+
 }
 header nav a:hover{
     color: #fff;
 }
 header nav{
+
     display: block;
     float: right;
     margin-top: -190px;
+
+    display: none;
+
 }
 
 /*filme principal*/
@@ -130,6 +140,7 @@ header nav{
     height: 500px;
     margin: 0;
 }
+
 /*Classe para TODOS TÍTUOS*/
 .titulos{
     color: #cd1b2e;
@@ -152,6 +163,8 @@ header nav{
     margin: 10px;
     width: 100%;
 }
+
+
 .servicos{
     display: flex;
     justify-content: space-around;
@@ -182,6 +195,7 @@ header nav{
     height: 800px;
     color: #cd1b2e;
     text-align: center;
+
     width: 900px;
     margin: auto;
 }
@@ -197,6 +211,11 @@ p{
 }
 p span{
     border-bottom: 1px solid;
+
+}
+p{
+    color: #ffffff;
+
 }
 footer{
     height: 50px;
@@ -210,6 +229,7 @@ footer{
     .servicos div{
         margin: 1rem 0;
     }
+
     .sobreNos{
         width: 90%;
     }
@@ -222,4 +242,6 @@ footer{
     .map iframe{
         width: 100%;
     }
+
+
 }
