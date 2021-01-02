@@ -16,6 +16,7 @@ body{
     background: var(--preto); /*acessando variável*/
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    opacity: .8;
 }
 .contatos{
     display: flex;
@@ -153,22 +154,30 @@ header nav{
 .icones img{
     height: 50px;
     margin: 10px;
+    animation: realce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+@keyframes realce{
+    50%{transform: scale(1.1);}
 }
 .map iframe{
+    display: block;
     text-align: center;
-    margin: 10px;
-    width: 95%;
+    margin: 10px 0;
+    width: 100%;
 }
 .servicos{
     display: flex;
     justify-content: space-around;
     padding: 1em;
+    align-items: center;
 }
 .servicos ul{
     list-style: none;
     text-align: center;
     width: 300px;
-    height: 300px;
     box-shadow: 1px 1px 3px #ffffff;
 }
 .titulo-lista{
@@ -204,12 +213,21 @@ p{
 p span{
     border-bottom: 1px solid;
 }
-p{
-    color: #ffffff;
+#sobre-nos p a{
+    display: block;
+    text-align: center;
+    color: #cd1b2e;
+}
+#marcas img{
+    width: 100%;
 }
 footer{
-    height: 50px;
-    border: 1px solid #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 7pt;
+    
 }
 @media(max-width:1000px){
     .servicos{
@@ -229,6 +247,11 @@ footer{
     }
     .container{
         height: 150px;
+    }
+    .map{
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .map iframe{
         width: 95%;
