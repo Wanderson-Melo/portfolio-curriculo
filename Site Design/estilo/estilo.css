@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("../imagens/pexels-francesca-zama-6206227.jpg") no-repeat ;
+    background-size: 100%;
+    background-position: 0 33%;
+}
+/*
+.mensagem{
+    position: absolute;
+    width: 40%;
+    height: 25%;
+    left: 30%;
+    text-align: center;
+    background-color: rgba(255,255,255,.5);
+    margin-top: 20%;
+    border-radius: 25px;
+    align-items: center;
+}
+#main{
+    transition: 2s;
+}
+*/
+.linha{
+    background-color: rgba(0, 0, 0, .5);
+    width: 20%;
+    height: 255px;
+    transition: 1s;
+    box-sizing: border-box;
+    border-radius: 15%;
+}
+.linha:hover{
+    background-color: rgba(0, 0, 0, 0);
+    transform: scale(.8);
+}
+.pacote{
+    display: flex;
+}
