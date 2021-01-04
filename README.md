@@ -1,4 +1,4 @@
-# Portifólio e Currículo
- Repositório para abrigar meu portifólio e todo conteúdo relacionado.
+# Portfólio e Currículo
+ Repositório para abrigar meu portfólio e todo conteúdo relacionado.
  
- https://wanderson-melo.github.io/portifolio-curriculo/
+ https://wanderson-melo.github.io/portfolio-curriculo/
