@@ -1,0 +1,122 @@
+/*
+PARAMETROS PARA REFERÊNCIA
+Cores:
+#cc0000; vermelho "Honda"
+#3d3d3e; menu e textos
+*/
+/*FONTES IMPORTADAS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/*ESTILOS GERAIS*/
+body{
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    transition: 2s; /*congelado até ativar o hover*/
+    background-color: #3d3d3e;
+} 
+body:hover{ /*configuração para o hover*/
+    color: #3d3d3e;
+    background-color: #ffffff;
+}
+
+/*ESTILOS PARA NAVBAR*/
+#nav-bar{
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #cc0000;
+}
+.logotipo{
+    height: 20px;
+}
+a{
+    text-decoration: none;
+}
+.encontre-concessionaria{
+    width: 170px;
+    height: 60px;
+    background-color: #cc0000;
+    margin-right: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    transition: 1s;
+    color: #ffffff;
+}
+body:hover .encontre-concessionaria{
+    background-color: rgba(0,0,0,.05);
+    color: #3d3d3e;
+}
+body:hover .encontre-concessionaria .pin2{
+    display: none;
+}
+body:hover .encontre-concessionaria .pin1{
+    display: block;
+}
+.pin1 img, .pin2 img{
+    width: 17.85px;
+    height: 27px;
+    display: block;
+    margin: 10px;
+}
+.encontre-concessionaria .pin1{
+    display: none;
+}
+.enc-concess-texto{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-align: center;
+    width: min-content;
+    letter-spacing: 1px;
+}
+
+/*ESTILOS PARA MAIN*/
+#main h1, h2{
+    font-weight: 900;
+    font-size: 48px;
+}
+#main h1{
+    text-align: center;
+    margin-top: 29px;
+}
+.container-flex{
+    display: flex;
+    justify-content: center;
+}
+.container-flex img{
+    width: 597px;
+    margin-right: 100px;
+}
+.texto{
+    width: 420px;
+    margin-right: 180px;
+}
+.texto h2{
+    margin-top: 130px;
+    margin-bottom: 15px;
+}
+.texto p{
+    margin: 0;
+    padding-top: 0;
+}
+.texto a{
+    display: block;
+    background-color: #cc0000;
+    padding: 15px;
+    margin-top: 30px;
+    width: max-content;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #ffffff;
+}
