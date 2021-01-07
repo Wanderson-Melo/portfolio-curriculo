@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="estilos/estilos.css">
     <title>Exercício Honda-Motores</title>
 </head>
-<body>
+<body onmouseenter="trocaCorSeta()" onmouseleave="trocaCorSeta2()">
     <div id="nav-bar">
         <div id="menu-produtos">
             <div class="menu">
                 <label for="check-menu">
                     <div class="menu-burger">
-                        <input type="checkbox" name="testName" id="check-menu" value="marcado">
+                        <input type="checkbox" name="testName" id="check-menu" value="marcado" onclick="abreMenu()">
                         <div class="menu-bar menu-bar1"></div>
                         <div class="menu-bar menu-bar2"></div>
                         <div class="menu-bar menu-bar3"></div>
@@ -27,7 +27,7 @@
                     </div>
                 </label>
                 <div class="lista">
-                    <label for="lista"><input id="lista" type="checkbox"  name="testName" value="marcado"><h3>Produtos</h3></label>
+                    <label for="lista"><input id="lista" type="checkbox"  name="testName" value="marcado" onclick="dropList()"><h3>Produtos</h3></label>
                     <ul></ul>
                 </div>
             </div>
