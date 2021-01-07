@@ -34,10 +34,90 @@ body:hover{ /*configuração para o hover*/
     align-items: center;
     border-bottom: 1px solid #cc0000;
 }
+#menu-produtos{
+    width: 200px;
+    display: flex;
+}
+#check-menu{
+    display: none;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+}
+.menu-burger{
+    width: 28px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu-bar{
+    height: 2px;
+    background-color: #ffffff;
+    transition: .5s;
+}
+#check-menu:checked ~ .menu-bar2{
+    background-color: transparent;
+}
+#check-menu:checked ~ .menu-bar1{
+    transform: translate(0, 10px) rotate(45deg);
+}
+#check-menu:checked ~ .menu-bar3{
+    transform: translate(0, -10px) rotate(-45deg);
+}
+.menu h3{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 10px;
+}
+.produtos{
+    display: flex;
+    align-items: center;
+}
+.seta{
+    padding: 0 20px;
+    height: 40px;
+    border-left: 1px solid #ffffff;
+}
+.seta img{
+    width: 14px;
+    padding-top: 15px;
+}
+#lista{
+    display: none;
+}
+.lista h3{
+    margin: 0;
+    line-height: 80px;
+    padding-left: 0px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.lista ul{
+    list-style: none;
+    position: absolute;
+    padding-left: 0;
+    margin-top: 0px;
+    margin-left: -55px;
+}
+.lista ul li{
+    background-color: #cc0000;
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #3d3d3e;
+}
 .logotipo{
     height: 20px;
 }
-a{
+#nav-bar a{
     text-decoration: none;
 }
 .encontre-concessionaria{
@@ -52,6 +132,12 @@ a{
     font-size: 15px;
     transition: 1s;
     color: #ffffff;
+}
+body:hover .menu-bar{
+    background-color: #3d3d3e;
+}
+body:hover .seta{
+    border-left: 1px solid #3d3d3d;
 }
 body:hover .encontre-concessionaria{
     background-color: rgba(0,0,0,.05);
