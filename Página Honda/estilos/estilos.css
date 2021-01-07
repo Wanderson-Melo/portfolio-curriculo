@@ -1,0 +1,209 @@
+/*
+PARAMETROS PARA REFERÊNCIA
+Cores:
+#cc0000; vermelho "Honda"
+#3d3d3e; menu e textos
+*/
+/*FONTES IMPORTADAS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/*ESTILOS GERAIS*/
+body{
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    transition: 2s; /*congelado até ativar o hover*/
+    background-color: #3d3d3e;
+} 
+body:hover{ /*configuração para o hover*/
+    color: #3d3d3e;
+    background-color: #ffffff;
+}
+
+/*ESTILOS PARA NAVBAR*/
+#nav-bar{
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #cc0000;
+}
+#menu-produtos{
+    width: 200px;
+    display: flex;
+}
+#check-menu{
+    display: none;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+}
+.menu-burger{
+    width: 28px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu-bar{
+    height: 2px;
+    background-color: #ffffff;
+    transition: .5s;
+}
+#check-menu:checked ~ .menu-bar2{
+    background-color: transparent;
+}
+#check-menu:checked ~ .menu-bar1{
+    transform: translate(0, 10px) rotate(45deg);
+}
+#check-menu:checked ~ .menu-bar3{
+    transform: translate(0, -10px) rotate(-45deg);
+}
+.menu h3{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 10px;
+}
+.produtos{
+    display: flex;
+    align-items: center;
+}
+.seta{
+    padding: 0 20px;
+    height: 40px;
+    border-left: 1px solid #ffffff;
+}
+.seta img{
+    width: 14px;
+    padding-top: 15px;
+}
+#lista{
+    display: none;
+}
+.lista h3{
+    margin: 0;
+    line-height: 80px;
+    padding-left: 0px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.lista ul{
+    list-style: none;
+    position: absolute;
+    padding-left: 0;
+    margin-top: 0px;
+    margin-left: -55px;
+}
+.lista ul li{
+    background-color: #cc0000;
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+}
+.logotipo{
+    height: 20px;
+}
+#nav-bar a{
+    text-decoration: none;
+}
+.encontre-concessionaria{
+    width: 170px;
+    height: 60px;
+    background-color: #cc0000;
+    margin-right: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    transition: 1s;
+    color: #ffffff;
+}
+body:hover .menu-bar{
+    background-color: #3d3d3e;
+}
+body:hover .seta{
+    border-left: 1px solid rgba(0,0,0,.2);
+}
+body:hover .encontre-concessionaria{
+    background-color: rgba(0,0,0,.05);
+    color: #3d3d3e;
+}
+body:hover .encontre-concessionaria .pin2{
+    display: none;
+}
+body:hover .encontre-concessionaria .pin1{
+    display: block;
+}
+.pin1 img, .pin2 img{
+    width: 17.85px;
+    height: 27px;
+    display: block;
+    margin: 10px;
+}
+.encontre-concessionaria .pin1{
+    display: none;
+}
+.enc-concess-texto{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-align: center;
+    width: min-content;
+    letter-spacing: 1px;
+}
+
+/*ESTILOS PARA MAIN*/
+#main h1, h2{
+    font-weight: 900;
+    font-size: 48px;
+}
+#main h1{
+    text-align: center;
+    margin-top: 29px;
+}
+.container-flex{
+    display: flex;
+    justify-content: center;
+}
+.container-flex img{
+    width: 597px;
+    margin-right: 100px;
+}
+.texto{
+    width: 420px;
+    margin-right: 180px;
+}
+.texto h2{
+    margin-top: 130px;
+    margin-bottom: 15px;
+}
+.texto p{
+    margin: 0;
+    padding-top: 0;
+}
+.texto a{
+    display: block;
+    background-color: #cc0000;
+    padding: 15px;
+    margin-top: 30px;
+    width: max-content;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #ffffff;
+}
